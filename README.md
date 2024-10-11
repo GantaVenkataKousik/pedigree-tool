@@ -1,21 +1,41 @@
+# PedigreeJS
 
-## pedigreejs
+PedigreeJS is a powerful tool for graphically building medical family trees (pedigrees) directly in the web browser. It is primarily designed for healthcare professionals and researchers to visualize family relationships and hereditary patterns. Built using modern web technologies, it offers advanced features and easy integration into any web application.
 
-pedigreejs is written using <a href="http://www.2ality.com/2014/09/es6-modules-final.html" rel="nofollow">ES2015 modules</a>.
+## Features
 
-It is used for graphically building pedigree data in the web-browser. 
+- Intuitive drag-and-drop interface for creating family trees 👨‍👩‍👦
+- Real-time updates of pedigree data 🧬
+- Customizable nodes and relationships to fit complex family structures
+- Supports visualization of genetic conditions across generations 🧑‍⚕️
 
-For details visit the [project page](https://ccge-boadicea.github.io/pedigreejs/).
+## Installation
 
-## Tests
+To install PedigreeJS, clone the repository and navigate into the project directory:
 
-Jasmine tests are defined in [pedigree_spec.js](spec/javascripts/pedigree_spec.js).
+```bash
+git clone https://github.com/ccge-boadicea/pedigreejs.git
+cd pedigreejs
 
-##  ECMAScript 5 bundle
 
-[Rollup](https://rollupjs.org/) is used to create a ECMAScript 5 bundle of the distribution (in the build directory):
+Here’s the complete README.md file for the PedigreeJS project with all the specified content and instructions on how to build it:
 
-```
+
+PedigreeJS is a powerful tool for graphically building medical family trees (pedigrees) directly in the web browser. It is primarily designed for healthcare professionals and researchers to visualize family relationships and hereditary patterns. Built using modern web technologies, it offers advanced features and easy integration into any web application.
+
+## Features
+
+- Intuitive drag-and-drop interface for creating family trees 👨‍👩‍👦
+- Real-time updates of pedigree data 🧬
+- Customizable nodes and relationships to fit complex family structures
+- Supports visualization of genetic conditions across generations 🧑‍⚕️
+
+## Installation
+
+To install PedigreeJS, clone the repository and navigate into the project directory:
+
+```Commands to run this project locally
+
 npm install
 npm run build
-```
+npm run server
