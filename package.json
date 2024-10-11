@@ -1,0 +1,58 @@
+{
+	"name": "pedigreejs",
+	"version": "v3.0.0-rc7",
+	"description": "pedigreejs is a javascript module for graphically building pedigree data in the web-browser.",
+	"browser": "es/pedigree.js",
+	"files": [
+		"es/*.js"
+	],
+	"directories": {               
+		"doc": "docs"
+	},
+	"scripts": {
+		"build": "rollup -c --bundleConfigAsCjs",
+		"build-es": "rollup es/index.js --file build/pedigreejs.es.v3.0.0-rc3.js --format es --plugin 'rollup-plugin-postcss={extract: true, minimize: true}'",
+		"server": "python -m http.server 8001",
+		"browserlist": "npx browserslist@latest --update-db",
+		"test": "jasmine server",
+		"check-updates": "ncu",
+		"update": "ncu -u"
+	},
+	"babel": {
+		"presets": [
+			"@babel/env"
+		]
+	},
+	"browserslist": [
+		"defaults"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/CCGE-BOADICEA/pedigreejs.git"
+	},
+	"author": "",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/CCGE-BOADICEA/pedigreejs/issues"
+	},
+	"homepage": "https://ccge-boadicea.github.io/pedigreejs/",
+	"devDependencies": {
+		"@babel/core": "^7.24.3",
+		"@babel/eslint-parser": "^7.24.1",
+		"@babel/preset-env": "^7.24.3",
+		"@rollup/plugin-babel": "^6.0.4",
+		"@rollup/plugin-terser": "^0.4.4",
+		"jasmine-browser-runner": "^2.4.0",
+		"jasmine-core": "^5.1.2",
+		"npm-check-updates": "^16.14.17",
+		"rollup": "^4.13.0",
+		"rollup-plugin-eslint": "^7.0.0",
+		"rollup-plugin-postcss": "^4.0.2",
+		"rollup-plugin-sourcemaps": "^0.6.3"
+	},
+	"dependencies": {
+		"@rollup/pluginutils": "^5.1.0",
+		"caniuse-lite": "^1.0.30001600",
+		"postcss": "^8.4.38"
+	}
+}

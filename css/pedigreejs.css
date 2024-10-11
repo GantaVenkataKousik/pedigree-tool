@@ -1,0 +1,12 @@
+
+.disabled {
+	color: grey;
+}
+.popup_selection, .addpartner, .addparents, .delete, .settings {
+	cursor: pointer;
+}
+.addsibling, .addchild {
+	cursor: default;
+}
+.pe-2 { padding-right: 0.75em; }
+svg {overflow:hidden}
